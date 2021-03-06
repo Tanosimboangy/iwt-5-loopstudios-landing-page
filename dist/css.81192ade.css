@@ -1,7 +1,22 @@
+@font-face {
+  font-family: "JosefinSans_Regular";
+  src: local(JosefinSans_Regular), url(/JosefinSans-Regular.69df6644.woff2) format("woff2"), url(/JosefinSans-Regular.9f8e6fca.woff) format("woff");
+}
+@font-face {
+  font-family: "JosefinSans_Thin";
+  src: local(JosefinSans_Thin), url(/JosefinSans-Thin.28aba3c8.woff2) format("woff2"), url(/JosefinSans-Thin.28aba3c8.woff2) format("woff");
+}
+@font-face {
+  font-family: "JosefinSans_Light";
+  src: local(JosefinSans_Light), url(/JosefinSans-Light.6cbc4896.woff2) format("woff2"), url(/JosefinSans-Light.6cbc4896.woff2) format("woff");
+}
+@font-face {
+  font-family: "Alata";
+  src: local(Alata), url(/Alata-Regular.3f44467d.woff2) format("woff2"), url(/Alata-Regular.1cbe5830.woff) format("woff");
+}
 body {
   margin: 0;
   background-color: #af82d8;
-  padding: 0 16px;
 }
 body ul {
   padding: 0;
@@ -29,6 +44,68 @@ body button {
   outline: none;
   cursor: pointer;
   border: none;
+}
+
+body .toggle_menu {
+  display: none;
+}
+body .header {
+  background-image: url(/image-hero.1839d237.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  position: relative;
+}
+body .header .heading_contents {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 30px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+body .header .heading_contents .header_navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+body .toggle_menu:checked ~ .header .header_navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  transform: translateX(0);
+  background-color: black;
+}
+body .toggle_menu:checked ~ .header .header_navigation div {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 30px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+body .toggle_menu:checked ~ .header .header_navigation .header_navigation--lists {
+  padding: 20px;
+}
+body .toggle_menu:checked ~ .header .header_navigation .header_navigation--lists li {
+  padding-bottom: 20px;
+}
+body .toggle_menu:checked ~ .header .header_navigation .header_navigation--lists li a {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "JosefinSans_Light";
+  line-height: 24px;
+  font-style: normal;
+  color: white;
 }
 
 /*# sourceMappingURL=/css.81192ade.css.map */

@@ -1,7 +1,26 @@
+@font-face {
+    font-family: "JosefinSans_Regular";
+    src: local(JosefinSans_Regular), url(/fonts/JosefinSans-Regular.woff2) format("woff2"), url(/fonts/JosefinSans-Regular.woff) format("woff"),
+}
+
+@font-face {
+    font-family: "JosefinSans_Thin";
+    src: local(JosefinSans_Thin), url(/fonts/JosefinSans-Thin.woff2) format("woff2"), url(/fonts/JosefinSans-Thin.woff2) format("woff"),
+}
+
+@font-face {
+    font-family: "JosefinSans_Light";
+    src: local(JosefinSans_Light), url(/fonts/JosefinSans-Light.woff2) format("woff2"), url(/fonts/JosefinSans-Light.woff2) format("woff"),
+}
+
+@font-face {
+    font-family: "Alata";
+    src: local(Alata), url(/fonts/Alata-Regular.woff2) format("woff2"), url(/fonts/Alata-Regular.woff) format("woff"),
+}
+
 body {
     margin: 0;
     background-color: rgb(175, 130, 216);
-    padding: 0 16px;
     ul {
         padding: 0;
         margin: 0;
